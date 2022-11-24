@@ -19,7 +19,7 @@ jmxMonitor = String.format(jmxMonitor, start, end);
 //build the string to be added as description.
 def link = "<a href='%s'>%s</a><br/>";
 def sb = new StringBuilder();
-sb.append(String.format(link, perfResult, "Grafana Performance Result"))  .append(String.format(link, jmxMonitor, "Grafana JMX Result"));
+sb.append(String.format(link, perfResult, "Grafana Performance Result")).append(String.format(link, jmxMonitor, "Grafana JMX Result"));
 
 // set build description
 build.setDescription(sb.toString());
